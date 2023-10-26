@@ -87,6 +87,7 @@ public class PlayerController : BaseController
         }
         
         Vector3 dir = _destPos - transform.position;
+        dir.y = 0;
         if (dir.magnitude < 0.1f)
         {
             State = Define.State.Idle;
@@ -136,7 +137,7 @@ public class PlayerController : BaseController
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //Debug.DrawRay(Camera.main.transform.position, ray.direction * 100, Color.red, 1.0f);
+        
         bool raycastHit = Physics.Raycast(ray, out hit, 100, _mask);
 
         switch (evt)

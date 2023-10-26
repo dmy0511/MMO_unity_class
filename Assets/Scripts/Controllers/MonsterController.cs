@@ -47,7 +47,7 @@ public class MonsterController : BaseController
             {
                 NavMeshAgent nma2 = gameObject.GetOrAddComponent<UnityEngine.AI.NavMeshAgent>();
                 nma2.SetDestination(transform.position);
-                _state = Define.State.Skill;
+                State = Define.State.Skill;
                 return;
             }
         }
@@ -59,7 +59,7 @@ public class MonsterController : BaseController
             return;
         }
 
-        NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
+        NavMeshAgent nma = gameObject.GetOrAddComponent<NavMeshAgent>();
         nma.SetDestination(_destPos);
         nma.speed = _stat.MoveSpeed;
         

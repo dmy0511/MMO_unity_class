@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2054980556503598033}
   - component: {fileID: 2054980556503598032}
   - component: {fileID: 2054980556503598047}
+  - component: {fileID: -2984623787571420995}
   m_Layer: 5
   m_Name: UI_HPBar
   m_TagString: Untagged
@@ -28,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 2054980556503598046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_LocalScale: {x: 0.008, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2054980557587319261}
@@ -101,6 +102,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &-2984623787571420995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054980556503598046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7ea923b6fa5d14db4bea995a561881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2054980556706511889
 GameObject:
   m_ObjectHideFlags: 0

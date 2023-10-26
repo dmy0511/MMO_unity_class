@@ -1922,12 +1922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fdf99e29ccba448af46115be16a86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: 0
-  _hp: 0
-  _maxHp: 0
-  _attack: 0
-  _defense: 0
-  _moveSpeed: 0
+  _level: 1
+  _hp: 100
+  _maxHp: 100
+  _attack: 10
+  _defense: 5
+  _moveSpeed: 5
 --- !u!114 &8228267794775864595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _state: 2
   _destPos: {x: 0, y: 0, z: 0}
-  _lockTarget: {fileID: 2112186916596854907, guid: 0a81a1ad1887b2546a395e56e4e33611, type: 3}
+  _lockTarget: {fileID: 0}
   _scanRange: 10
   _attackRange: 10
 --- !u!195 &8228267794775864594
